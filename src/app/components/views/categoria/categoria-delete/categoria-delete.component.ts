@@ -36,7 +36,7 @@ export class CategoriaDeleteComponent implements OnInit {
       this.service.mensagem('Categorias deletada com sucesso')
     }, err =>{
 
-      this.service.mensagem(err.error.error)
+      this.service.mensagem('Categoria não pode ser deletada, possui livros associados')
 
     })
   }

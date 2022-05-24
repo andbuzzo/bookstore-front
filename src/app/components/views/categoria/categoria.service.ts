@@ -34,6 +34,11 @@ delete(id: String): Observable<void>{
   return this.http.delete<void>(url)
 }
 
+update(categoria: categoria):Observable<void>{
+  const url = `${this.baseUrl}categorias/${categoria.id}`
+  return this.http.put<void>(url,categoria)
+}
+
 
 mensagem(str: String): void {
   this._snack.open(`${str}`, 'OK',{
