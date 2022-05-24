@@ -19,10 +19,21 @@ export class CategoriaService {
     return this.http.get<categoria[]>(url)
   }
 
+  findById(id: String): Observable<categoria>{
+    const url = `${this.baseUrl}categorias/${id}`
+    return this.http.get<categoria>(url)
+  }
+
 create(categoria:categoria): Observable<categoria>{
   const url =`${this.baseUrl}categorias`
   return this.http.post<categoria>(url, categoria);
 }
+
+delete(id: String): Observable<void>{
+  const url =`${this.baseUrl}categorias/${id}`
+  return this.http.delete<void>(url)
+}
+
 
 mensagem(str: String): void {
   this._snack.open(`${str}`, 'OK',{
