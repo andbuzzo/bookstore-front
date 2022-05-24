@@ -5,7 +5,9 @@
 i{
     padding-right: .6rem;
 }
-
+.sidenav{
+    background-color: grey;
+}
 .mat-sidenav-container{
-    background-color: darkgrey;
+    background-color: rgb(202, 202, 202);
 }
