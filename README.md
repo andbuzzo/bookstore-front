@@ -1,3 +1,8 @@
+# Imagens do projeto
+
+
+
+![Screenshot_20220420-193351](https://github.com/andbuzzo/bookstore-front/blob/master/20220526_125649.gif)
 # BookstoreFront
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
